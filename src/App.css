@@ -1,0 +1,36 @@
+.header{
+  background-color: #1B1464;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  padding: 10px;
+}
+
+.form .stack-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+
+
+
+.data-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.data-element{
+  display: flex;
+  /* border: 2px solid red; */
+  width: 60%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ecf0f1;
+  padding: 0px 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 10px;
+}
