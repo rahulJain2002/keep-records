@@ -22,6 +22,11 @@ function App() {
   function handleEmailChange(event){
     setEmail(event.target.value);
   }
+  function handleEnterEvent(event){
+    if(event.key=="Enter"){
+      addData();
+    }
+  }
 
   const addData = () =>{
 
@@ -42,8 +47,8 @@ function App() {
       <div className='form'>
 
         <Stack spacing={2} direction="row" className='stack-container'> 
-          <TextField value={name} onChange={handleNameChange}  label="name" variant="outlined" />
-          <TextField value={email} onChange={handleEmailChange}  label="email" variant="outlined" />
+          <TextField value={name} onChange={handleNameChange} onKeyUp={handleEnterEvent}  label="name" variant="outlined" />
+          <TextField value={email} onChange={handleEmailChange} onKeyUp={handleEnterEvent} label="email" variant="outlined" />
 
           <Button onClick={addData} variant="contained" >
             <AddIcon/>
